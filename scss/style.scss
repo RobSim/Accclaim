@@ -1,0 +1,24 @@
+@import "dribbble";
+
+body {
+	width: 92%;
+	margin-left: 4%;
+	margin-right: 4%;
+	padding: 0 auto;
+	background-image:url('/images/bg.png');
+	background-repeat:repeat;
+	color: #333;
+	font-size: 1.3rem;
+	text-align: left;
+	line-height: 1.7rem;
+}
+
+img {
+// Responsive IMGs
+  max-width: 100%;
+  width: auto\9; /*iefix*/
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
