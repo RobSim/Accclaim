@@ -44,8 +44,8 @@
 	    		$.each(data.shots, function (i, shot) {
 	       html.push('<li>');
 	       html.push('<a class="profpic" href="' + shot.player.url + '"><img src="' + shot.player.avatar_url + '" alt="' + shot.player.name + '"></a> ');
-	       html.push('<a href="' + shot.url + '" target="_blank" class="linkc">');
-	       html.push('<img class="shooots" src="' + shot.image_url + '" alt="' + shot.title + '">');
+	       html.push('<a class="shots" href="' + shot.url + '" target="_blank" class="linkc">');
+	       html.push('<img  src="' + shot.image_url + '" alt="' + shot.title + '">');
 						html.push('</a></li>');
 	    		});
 	
