@@ -6,7 +6,7 @@
  <title>Prettty</title>
 <!-- JavaScript -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src = "https://halfcourtshot.googlecode.com/svn/tags/101129.1100/js/half-court-shot.jsapp.mh.min.js"></script>
+<script type="text/javascript" src="js/jquery.jribbble.min.js"></script>
 <!-- Stylesheets -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -16,9 +16,44 @@
 
 <!-- Body Content -->
 <body>
-<div id="dribbble"></div>
-<script type="text/javascript">var hcs = new HalfCourtShot({ jersey: "RobSim", shots: 4, goal: 'dribbble' });</script>
+		<div id="container">
+			<ul id="shotsListing" class="clearfix">
+				<strong>Loading...</strong>
+			</ul>
+		</div>
 
 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			getShotsList(1);
+		
+			$("nav .pagination").click(function(e){
+				e.preventDefault();
+				
+				$(this).siblings(".sel").removeClass("sel");
+				$(this).addClass("sel");
+				
+				var newnum = $(this).html();
+				getShotsList(newnum);
+			});
+			
+			function getShotsList(p){
+				$.jribbble.getShotsByList("popular", function(data){
+	    		var html = [];
+	
+	    		$.each(data.shots, function (i, shot) {
+	       html.push('<li>');
+	       html.push('<a class="profpic" href="' + shot.player.url + '"><img src="' + shot.player.avatar_url + '" alt="' + shot.player.name + '"></a> ');
+	       html.push('<a href="' + shot.url + '" target="_blank" class="linkc">');
+	       html.push('<img class="shooots" src="' + shot.image_url + '" alt="' + shot.title + '">');
+						html.push('</a></li>');
+	    		});
+	
+	    	$('#shotsListing').html(html.join(''));
+	    	}, {page: p, per_page: 15});			
+			}
+
+		});
+	</script>
 </body>
 </html>

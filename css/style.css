@@ -1,64 +1,9 @@
-.hcs {
-  overflow: hidden;
-  text-align: center; }
-
-.hcs ul,
-.hcs * {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  list-style-type: none; }
-
-.hcs ul {
-  margin: 0 -10px; }
-
-@media screen and (min-width: 700px) {
-  .hcs li {
-    width: 400px;
-    height: 300px;
-    float: left; }
-
-  .hcs li a {
-    width: 400px;
-    height: 300px; } }
-@media screen and (max-width: 700px) {
-  .hcs li {
-    width: 300px;
-    height: 225px; }
-
-  .hcs li a {
-    width: 300px;
-    height: 225px; } }
-.hcs li {
-  padding: 10px;
-  margin: 10px 10px 20px 10px;
-  background: #fff;
-  -webkit-border-radius: 10px;
-  -webkit-transition: background 0.2s linear;
-  -moz-border-radius: 10px;
-  -moz-transition: background 0.2s linear;
-  border-radius: 10px;
-  transition: background 0.2s linear;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#14000000, endColorstr=#14000000);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#14000000, endColorstr=#14000000)";
-  vertical-align: middle; }
-
-.hcs li a {
-  text-align: center;
-  vertical-align: middle; }
-
-.hcs li:hover {
-  background: rgba(0, 0, 0, 0.2);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000)"; }
-
 body {
   width: 92%;
   margin-left: 4%;
   margin-right: 4%;
   padding: 0 auto;
-  background-image: url("/prettty/images/bg.png");
+  background-image: url("/images/bg.png");
   background-repeat: repeat;
   color: #333;
   font-size: 1.3rem;
@@ -73,3 +18,55 @@ img {
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic; }
+
+#container {
+  display: block; }
+
+/** shots listing **/
+#shotsListing {
+  font-size: 1.2em; }
+
+#shotsListing li {
+  display: block;
+  margin-right: 12px;
+  text-align: center;
+  margin-bottom: 22px;
+  max-width: 500px;
+  min-height: 300px; }
+
+#shotsListing li img {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  max-width: 400px;
+  max-height: 300px; }
+
+#shotsListing li .details {
+  display: block;
+  background: rgba(255, 255, 255, 0.85);
+  overflow: hidden;
+  white-space: nowrap; }
+
+.profpic img {
+  margin: 10px 10px 10px 10px;
+  float: left;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+
+.shooots img {
+  float: right; }
+
+/** clearfix **/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }

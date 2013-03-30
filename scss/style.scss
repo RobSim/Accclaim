@@ -1,11 +1,11 @@
-@import "dribbble";
+// @import "dribbble";
 
 body {
 	width: 92%;
 	margin-left: 4%;
 	margin-right: 4%;
 	padding: 0 auto;
-	background-image:url('/prettty/images/bg.png');
+	background-image:url('/images/bg.png');
 	background-repeat:repeat;
 	color: #333;
 	font-size: 1.3rem;
@@ -22,3 +22,49 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
+#container { display: block; }
+
+/** shots listing **/
+#shotsListing { font-size: 1.2em; }
+
+#shotsListing li { 
+	display: block; 
+	// float: left; 
+	margin-right: 12px; 
+	text-align: center; 
+	margin-bottom: 22px; 
+	max-width: 500px; 
+	min-height: 300px; }
+
+#shotsListing li img { 
+	border-radius: 5px;
+	 -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	   max-width: 400px; 
+	   max-height: 300px;}
+
+#shotsListing li .details { 
+display: block;
+background: rgba(255, 255, 255, 0.85); 
+overflow: hidden; 
+white-space: nowrap;
+}
+
+.profpic img{
+	margin: 10px 10px 10px 10px;
+	float: left;
+	width: 48px;
+	height: 48px;
+	border-radius: 5px;
+	 -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+}
+
+.shooots img{
+	float: right;
+}
+
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
