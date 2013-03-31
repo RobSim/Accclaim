@@ -56,7 +56,7 @@ img {
   -webkit-border-radius: 5px; }
 
 .shots img {
-  float: right;
+  float: left;
   padding: 12px 12px 12px 12px;
   background: #fff;
   border-radius: 5px;
