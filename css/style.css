@@ -9,9 +9,6 @@ body {
   text-align: left;
   line-height: 1.7rem; }
 
-#container {
-  display: block; }
-
 /** shots listing **/
 #shotsListing {
   font-size: 1.2em; }
