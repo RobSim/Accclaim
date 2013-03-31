@@ -14,24 +14,14 @@ body {
   font-size: 1.2em; }
 
 #shotsListing li {
+  margin: 20px 20px 20px 20px;
   display: block;
-  text-align: center;
-  margin-bottom: 50px; }
+  text-align: center; }
 
-@media screen and (max-width: 700px) {
-  #shotsListing li img {
-    max-width: 70%;
-    max-height: 300px; }
-
-  #shotsListing li {
-    min-height: 0px; } }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 0px) {
   #shotsListing li img {
     max-width: 400px;
-    max-height: 300px; }
-
-  #shotsListing li {
-    min-height: 300px; } }
+    max-height: 300px; } }
 .profpic img {
   margin: 12px 12px 12px 12px;
   float: left;
@@ -42,6 +32,7 @@ body {
   -webkit-border-radius: 5px; }
 
 .shots img {
+  float: left;
   padding: 12px 12px 12px 12px;
   background: #fff;
   border-radius: 5px;
