@@ -5,11 +5,14 @@
 <meta name="viewport" content="width=device-width, user-scalable=no" />
  <!-- Title -->
  <title>Prettty</title>
+ 
+ <!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
 <!-- JavaScript -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/jquery.jribbble.min.js"></script>
-<!-- Stylesheets -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/hook.js" type="text/javascript"></script>
 
 <!-- Analytics -->
 
@@ -18,7 +21,7 @@
 <!-- Body Content -->
 <body>
 			<ul id="shotsListing" >
-				<strong>Loading...</strong>
+				<img src="/images/hook-spinner.gif">
 			</ul>
 
 
@@ -43,16 +46,23 @@
 	    		$.each(data.shots, function (i, shot) {
 	       html.push('<li>');
 	       html.push('<a class="profpic" href="' + shot.player.url + '"><img src="' + shot.player.avatar_url + '" alt="' + shot.player.name + '"></a> ');
+	       // html.push('<a class="lefter" href="#"><img class="lefter" src="/images/like.png"></a>')
 	       html.push('<a class="shots" href="' + shot.url + '" target="_blank" class="linkc">');
 	       html.push('<img  src="' + shot.image_url + '" alt="' + shot.title + '">');
 						html.push('</a></li>');
 	    		});
 	
 	    	$('#shotsListing').html(html.join(''));
-	    	}, {page: p, per_page: 15});			
+	    	}, {page: p, per_page: 20});			
 			}
 
 		});
 	</script>
+	<div id="hook">
+	<div id="loader">
+		<div class="spinner"></div>
+	</div>
+	<!-- <span id="hook-text">Reloading...</span> -->
+</div>
 </body>
 </html>
