@@ -86,14 +86,14 @@ body {
   width: 36px;
   height: 36px;
   display: block;
-  background: url("/images/like.png") no-repeat;
+  background: url("/images/Like.png") no-repeat;
   background-size: 36px 36px; }
 
 .like:hover {
-  background-image: url("/images/liked.png"); }
+  background-image: url("/images/Liked.png"); }
 
 .like:visited {
-  background-image: url("/images/liked.png"); }
+  background-image: url("/images/Liked.png"); }
 
 .follow {
   margin: 14px 0 20px 6px;
@@ -101,14 +101,14 @@ body {
   width: 36px;
   height: 36px;
   display: block;
-  background: url("/images/follow.png") no-repeat;
+  background: url("/images/Follow.png") no-repeat;
   background-size: 36px 36px; }
 
 .follow:hover {
-  background-image: url("/images/followed.png"); }
+  background-image: url("/images/Followed.png"); }
 
 .follow:visited {
-  background-image: url("/images/followed.png"); }
+  background-image: url("/images/Followed.png"); }
 
 .bucket {
   margin: 14px 0 20px 4px;
@@ -116,14 +116,14 @@ body {
   width: 36px;
   height: 36px;
   display: block;
-  background: url("/images/bucket.png") no-repeat;
+  background: url("/images/Bucket.png") no-repeat;
   background-size: 36px 36px; }
 
 .bucket:hover {
-  background-image: url("/images/bucketed.png"); }
+  background-image: url("/images/Bucketed.png"); }
 
 .bucket:visited {
-  background-image: url("/images/bucketed.png"); }
+  background-image: url("/images/Bucketed.png"); }
 
 .sidebar {
   margin: 0px 12px 0px -30px;
