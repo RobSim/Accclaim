@@ -43,8 +43,8 @@ body {
 			background-image: url('/images/Liked.png');
 		}
 
-		.like:visited {
-			background-image: url('/images/Liked.png');
+		.like a:visited {
+			background-image: url('/images/Liked.png') !important;
 		}
 
 		.follow{
@@ -61,7 +61,7 @@ body {
 			background-image: url('/images/Followed.png');
 		}
 
-		.follow:visited {
+		.follow a:visited {
 			background-image: url('/images/Followed.png');
 		}
 
@@ -79,7 +79,7 @@ body {
 			background-image: url('/images/Bucketed.png');
 		}
 
-		.bucket:visited {
+		.bucket a:visited {
 			background-image: url('/images/Bucketed.png');
 		}
 
