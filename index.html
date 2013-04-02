@@ -4,7 +4,7 @@
 <meta charset=utf-8 />
 <meta name="viewport" content="width=device-width, user-scalable=no" />
  <!-- Title -->
- <title>Prettty</title>
+ <title>Accclaim</title>
  
  <!-- Stylesheets -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,7 +12,7 @@
 <!-- JavaScript -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/jquery.jribbble.min.js"></script>
-<script src="js/hook.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.infinitescroll.js"></script>
 
 <!-- Analytics -->
 
@@ -20,10 +20,10 @@
 
 <!-- Body Content -->
 <body>
-			<ul id="shotsListing" >
+	<a name="top"></a>
+			<ul id="shotsListing" class="clearfix">
 				<img src="/images/hook-spinner.gif">
 			</ul>
-
 
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -58,17 +58,29 @@
 	    		});
 	
 	    	$('#shotsListing').html(html.join(''));
-	    	}, {page: p, per_page: 20});			
+	    	}, {page: p, per_page: 15});			
 			}
 
 		});
 	</script>
+<nav>
+			<a href="#" id="p1" class="pagination sel">1</a>
+			<a href="#" id="p2" class="pagination">2</a>
+			<a href="#" id="p3" class="pagination">3</a>
+			<a href="#" id="p4" class="pagination">4</a>
+			<a href="#" id="p5" class="pagination">5</a>
+			<a href="#" id="p6" class="pagination">6</a>
+			<a href="#" id="p7" class="pagination">7</a>
+			<a href="#" id="p8" class="pagination">8</a>
+			<a href="#" id="p9" class="pagination">9</a>
+			<a href="#top">Top</a>
+		</nav>
 	<!-- <div class="bottom">
 		<p>Hello</p></div> -->
-	<div id="hook">
+<!-- 	<div id="hook">
 	<div id="loader">
 		<div class="spinner"></div>
-	</div>
+	</div> -->
 	<!-- <span id="hook-text">Reloading...</span> -->
 </div>
 </body>

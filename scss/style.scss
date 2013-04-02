@@ -1,4 +1,4 @@
-@import "hook";
+// @import "hook";
 @import "fonts";
 
 body {
@@ -287,3 +287,15 @@ body {
 	color: #444;
 	font-family: 'Proxima Nova', sans-serif;
 }
+
+/** mini-nav **/
+nav {
+	margin-left: 70px;
+}
+nav a {padding: 5px 9px; font-size: 1.2em; font-family: 'Proxima Nova', sans-serif; color: #999; text-decoration: none;}
+
+nav a:hover, nav a.sel { text-decoration: none; background: rgba(0,0,0,0.1); color: #fff; }
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
