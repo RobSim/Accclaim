@@ -5,6 +5,6 @@ $('#content').infinitescroll({
 		// selector for the paged navigation (it will be hidden)
 	nextSelector : "div.navigation a:first",    
 		// selector for the NEXT link (to page 2)
-	itemSelector : "#content div.post"          
+	itemSelector : "ul#shotsListing li"          
 		// selector for all items you'll retrieve
  });
