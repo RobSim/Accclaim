@@ -182,13 +182,6 @@ body {
   float: left;
   padding-top: 60px; }
 
-.bottom {
-  width: 100%;
-  border-top: 1px solid #999999;
-  font-size: 1.4rem;
-  color: #444;
-  font-family: "Proxima Nova", sans-serif; }
-
 /** mini-nav **/
 nav {
   margin-left: 70px; }
@@ -205,6 +198,7 @@ nav a:hover, nav a.sel {
   background: rgba(0, 0, 0, 0.1);
   color: #fff; }
 
+/*End Mini-Nav*/
 /** clearfix **/
 .clearfix:after {
   content: ".";
@@ -216,3 +210,19 @@ nav a:hover, nav a.sel {
 
 .clearfix {
   display: inline-block; }
+
+/* End Clearfix */
+/* Slide In Content */
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards; }
+
+.already-visible {
+  transform: translateY(0);
+  animation: none; }
+
+@keyframes come-in {
+  to {
+    transform: translateY(0); } }
+
+/* End Slide In Content */

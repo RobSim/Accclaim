@@ -188,81 +188,6 @@ body {
 		}
 }
 
-		// .profpic img{
-		// 	margin: 12px 0 12px 0;
-		// 	width: 48px;
-		// 	height: 48px;
-		// 	border-radius: 5px;
-		// 	 -moz-border-radius: 5px;
-		// 	  -webkit-border-radius: 5px;
-		// }
-
-// /* Side Navigation */
-
-// .like{
-// 	margin: 14px 0 20px 6px;
-// 	padding-bottom: 7px;
-// 	width: 36px;
-// 	height: 36px;
-// 	display: block;
-// 	background: url('/images/Like.png') no-repeat;
-// 	background-size: 36px 36px;
-// }
-
-// .like:hover {
-// 	background-image: url('/images/Liked.png');
-// }
-
-// .like:visited {
-// 	background-image: url('/images/Liked.png');
-// }
-
-// .follow{
-// 	margin: 14px 0 20px 6px;
-// 	padding-bottom: 7px;
-// 	width: 36px;
-// 	height: 36px;
-// 	display: block;
-// 	background: url('/images/Follow.png') no-repeat;
-// 	background-size: 36px 36px;
-// }
-
-// .follow:hover {
-// 	background-image: url('/images/Followed.png');
-// }
-
-// .follow:visited {
-// 	background-image: url('/images/Followed.png');
-// }
-
-// .bucket{
-// 	margin: 14px 0 20px 4px;
-// 	padding-bottom: 7px;
-// 	width: 36px;
-// 	height: 36px;
-// 	display: block;
-// 	background: url('/images/Bucket.png') no-repeat;
-// 	background-size: 36px 36px;
-// }
-
-// .bucket:hover {
-// 	background-image: url('/images/Bucketed.png');
-// }
-
-// .bucket:visited {
-// 	background-image: url('/images/Bucketed.png');
-// }
-
-// .sidebar {
-// 	margin: 0px 12px 0px -30px;
-// 	float: left;
-// 	max-width: 48px;
-// 	width: 48px;
-// 	height: 300px;
-// }
-
-// /* End Side Navigation */
-
 .shots img{
 	float: left;
 	padding: 12px 12px 12px 12px;
@@ -280,13 +205,6 @@ body {
 	padding-top: 60px;
 }
 
-.bottom {
-	width: 100%;
-	border-top: 1px solid #999;
-	font-size: 1.4rem;
-	color: #444;
-	font-family: 'Proxima Nova', sans-serif;
-}
 
 /** mini-nav **/
 nav {
@@ -295,7 +213,24 @@ nav {
 nav a {padding: 5px 9px; font-size: 1.2em; font-family: 'Proxima Nova', sans-serif; color: #999; text-decoration: none;}
 
 nav a:hover, nav a.sel { text-decoration: none; background: rgba(0,0,0,0.1); color: #fff; }
+/*End Mini-Nav*/
 
 /** clearfix **/
 .clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
 .clearfix { display: inline-block; }
+/* End Clearfix */
+
+/* Slide In Content */
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+/* End Slide In Content */
