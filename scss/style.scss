@@ -110,6 +110,7 @@ body {
 	   max-height: 300px;
 	   }
 	   #shotsListing li {
+	   	// float: left;
 	   	min-height: 300px
 	   }
 	   /* Side Navigation */
@@ -169,7 +170,7 @@ body {
 		}
 
 		.sidebar {
-			margin: 0px 12px 0px -30px;
+			margin: 0px 12px 0px 15px;
 			float: left;
 			max-width: 48px;
 			width: 48px;
