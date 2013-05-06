@@ -17,13 +17,12 @@
 	
 	    		$.each(data.shots, function (i, shot) {
 	       html.push('<li>');
-	       // // html.push('<div class="sidebar">')
-	       // html.push('<a class="profpic" href="' + shot.player.url + '"><img src="' + shot.player.avatar_url + '" alt="' + shot.player.name + '"></a> ');
-	       // html.push('<a class="like" href="' + shot.url + '/fans"><img src="/images/like.png"></a>')
+	       html.push('<div class="sidebar">')
+	       html.push('<a class="profpic" href="' + shot.player.url + '"><img src="' + shot.player.avatar_url + '" alt="' + shot.player.name + '"></a> ');
 	       // html.push('<a class="like" href="' + shot.url + '/fans" title="Like"></a>')
 	       // html.push('<a class="follow" href="' + shot.player.url + '/followers" title="Follow"></a>')
 	       // html.push('<a class="bucket" href="' + shot.url + '/buckets" title="Bucket"></a>')
-	       // html.push('</div>')
+	       html.push('</div>')
 	       html.push('<a class="shots" href="' + shot.url + '" target="_blank" class="linkc">');
 	       html.push('<img  src="' + shot.image_teaser_url + '" alt="' + shot.title + '">');
 						html.push('</a></li>');

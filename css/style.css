@@ -1,3 +1,71 @@
+@media screen and (min-width: 0px) {
+  #shotsListing li img {
+    max-width: 400px;
+    max-height: 300px; }
+
+  #shotsListing li {
+    float: left; }
+
+  /* Side Navigation */
+  .like {
+    margin: 14px 0 20px 6px;
+    padding-bottom: 7px;
+    width: 36px;
+    height: 36px;
+    display: block;
+    background: url("/images/Like.png") no-repeat;
+    background-size: 36px 36px; }
+
+  .like:hover {
+    background-image: url("/images/Liked.png"); }
+
+  .like:visited {
+    background-image: url("/images/Liked.png"); }
+
+  .follow {
+    margin: 14px 0 20px 6px;
+    padding-bottom: 7px;
+    width: 36px;
+    height: 36px;
+    display: block;
+    background: url("/images/Follow.png") no-repeat;
+    background-size: 36px 36px; }
+
+  .follow:hover {
+    background-image: url("/images/Followed.png"); }
+
+  .follow:visited {
+    background-image: url("/images/Followed.png"); }
+
+  .bucket {
+    margin: 14px 0 20px 4px;
+    padding-bottom: 7px;
+    width: 36px;
+    height: 36px;
+    display: block;
+    background: url("/images/Bucket.png") no-repeat;
+    background-size: 36px 36px; }
+
+  .bucket:hover {
+    background-image: url("/images/Bucketed.png"); }
+
+  .bucket:visited {
+    background-image: url("/images/Bucketed.png"); }
+
+  .sidebar {
+    margin: 0px 12px 0px 15px;
+    float: left;
+    max-width: 36px;
+    width: 36px; }
+
+  /* End Side Navigation */
+  .profpic img {
+    margin: 12px 0 12px 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; } }
 @font-face {
   font-family: 'dribbble';
   src: url("font/handsomebold-webfont.eot");
