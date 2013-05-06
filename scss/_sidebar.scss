@@ -1,0 +1,169 @@
+@media screen and (max-width: 700px) {
+	#shotsListing li img { 
+		max-width: 200px;
+		max-height: 150px;
+	   }
+	   #shotsListing li {
+	   	min-height: 175px;
+	   }
+
+	   	   /* Side Navigation */
+
+		.like{
+			margin: 14px 0 10px 6px;
+			padding-bottom: 4px;
+			width: 24px;
+			height: 24px;
+			display: block;
+			background: url('/images/Like.png') no-repeat;
+			background-size: 24px 24px;
+		}
+
+		.like:hover {
+			background-image: url('/images/Liked.png');
+		}
+
+		.like a:visited {
+			background-image: url('/images/Liked.png') !important;
+		}
+
+		.follow{
+			margin: 14px 0 10px 6px;
+			padding-bottom: 7px;
+			width: 24px;
+			height: 24px;
+			display: block;
+			background: url('/images/Follow.png') no-repeat;
+			background-size: 24px 24px;
+		}
+
+		.follow:hover {
+			background-image: url('/images/Followed.png');
+		}
+
+		.follow a:visited {
+			background-image: url('/images/Followed.png');
+		}
+
+		.bucket{
+			margin: 14px 0 10px 4px;
+			padding-bottom: 7px;
+			width: 24px;
+			height: 24px;
+			display: block;
+			background: url('/images/Bucket.png') no-repeat;
+			background-size: 24px 24px;
+		}
+
+		.bucket:hover {
+			background-image: url('/images/Bucketed.png');
+		}
+
+		.bucket a:visited {
+			background-image: url('/images/Bucketed.png');
+		}
+
+		.sidebar {
+			margin: 0px 12px 0px -30px;
+			float: left;
+			max-width: 36px;
+			width: 36px;
+			height: 200px;
+		}
+
+		/* End Side Navigation */
+
+		.profpic img{
+			margin: 5px 0 0px 0;
+			width: 36px;
+			height: 36px;
+			border-radius: 3px;
+			 -moz-border-radius: 3px;
+			  -webkit-border-radius: 3px;
+		}
+}
+
+@media screen and (min-width: 700px) {
+	#shotsListing li img { 
+	   max-width: 400px; 
+	   max-height: 300px;
+	   }
+	   #shotsListing li {
+	   	float: left;
+	   	// min-height: 300px
+	   }
+	   /* Side Navigation */
+
+		.like{
+			margin: 14px 0 20px 6px;
+			padding-bottom: 7px;
+			width: 36px;
+			height: 36px;
+			display: block;
+			background: url('/images/Like.png') no-repeat;
+			background-size: 36px 36px;
+		}
+
+		.like:hover {
+			background-image: url('/images/Liked.png');
+		}
+
+		.like:visited {
+			background-image: url('/images/Liked.png');
+		}
+
+		.follow{
+			margin: 14px 0 20px 6px;
+			padding-bottom: 7px;
+			width: 36px;
+			height: 36px;
+			display: block;
+			background: url('/images/Follow.png') no-repeat;
+			background-size: 36px 36px;
+		}
+
+		.follow:hover {
+			background-image: url('/images/Followed.png');
+		}
+
+		.follow:visited {
+			background-image: url('/images/Followed.png');
+		}
+
+		.bucket{
+			margin: 14px 0 20px 4px;
+			padding-bottom: 7px;
+			width: 36px;
+			height: 36px;
+			display: block;
+			background: url('/images/Bucket.png') no-repeat;
+			background-size: 36px 36px;
+		}
+
+		.bucket:hover {
+			background-image: url('/images/Bucketed.png');
+		}
+
+		.bucket:visited {
+			background-image: url('/images/Bucketed.png');
+		}
+
+		.sidebar {
+			margin: 0px 12px 0px 15px;
+			float: left;
+			max-width: 36px;;
+			width: 36px;;
+			// height: 300px;
+		}
+
+		/* End Side Navigation */
+
+		.profpic img{
+			margin: 12px 0 12px 0;
+			width: 36px;;
+			height: 36px;;
+			border-radius: 5px;
+			 -moz-border-radius: 5px;
+			  -webkit-border-radius: 5px;
+		}
+}

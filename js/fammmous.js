@@ -1,4 +1,4 @@
-$(document).ready(function(){
+		$(document).ready(function(){
 			getShotsList(1);
 		
 			$("nav .pagination").click(function(e){
@@ -12,12 +12,12 @@ $(document).ready(function(){
 			});
 			
 			function getShotsList(p){
-				$.jribbble.getShotsThatPlayerLikes( 'RobSim', function(data){
+				$.jribbble.getShotsThatPlayerLikes("accclaim", function(data){
 	    		var html = [];
 	
-	    		$.each(playerLikes.shots, function (i, shot) {
+	    		$.each(data.shots, function (i, shot) {
 	       html.push('<li>');
-	       // html.push('<div class="sidebar">')
+	       // // html.push('<div class="sidebar">')
 	       // html.push('<a class="profpic" href="' + shot.player.url + '"><img src="' + shot.player.avatar_url + '" alt="' + shot.player.name + '"></a> ');
 	       // html.push('<a class="like" href="' + shot.url + '/fans"><img src="/images/like.png"></a>')
 	       // html.push('<a class="like" href="' + shot.url + '/fans" title="Like"></a>')
@@ -30,7 +30,7 @@ $(document).ready(function(){
 	    		});
 	
 	    	$('#shotsListing').html(html.join(''));
-	    	}, {page: p, per_page: 15});			
+	    	}, {page: p, per_page: 20});			
 			}
 
 		});
