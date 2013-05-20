@@ -1,9 +1,8 @@
-@import "dribbble";
+// @import "hook"; //Pull to Refresh
+@import "sidebar"; //SCSS for the like follow bucket and profile icons. Must turn sidebar on is JS to have effect.
+@import "fonts";
 
 body {
-	width: 92%;
-	margin-left: 4%;
-	margin-right: 4%;
 	padding: 0 auto;
 	background-image:url('/images/bg.png');
 	background-repeat:repeat;
@@ -13,12 +12,95 @@ body {
 	line-height: 1.7rem;
 }
 
-img {
-// Responsive IMGs
-  max-width: 100%;
-  width: auto\9; /*iefix*/
-  height: auto;
-  vertical-align: middle;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
+/** shots listing **/
+#shotsListing { font-size: 1.2em; }
+
+#shotsListing li { 
+	 display: block; 
+	margin-bottom: 55px; 
 }
+
+a {
+	text-decoration: none;
+	color: #E7508C;
+}
+
+header#head {
+	margin-left: 2%;
+}
+footer#foot {
+	margin-left: 2%;
+}
+h1 {
+	font-family: 'dribbble', sans-serif;
+	color: #555;
+	&.title {
+		font-size: 4rem;
+		margin-bottom: 18px;
+	}
+}
+h2 {
+	font-family: 'dribbble', sans-serif;
+	font-size: 1.8rem;
+	margin-top: 0px;
+	margin-bottom: 8px;
+	color: #555;
+}
+
+#shotsListing li {
+	float: left;
+}
+
+.shots img{
+	float: left;
+	padding: 7px 7px 7px 7px;
+	background: #fff;
+	border-radius: 5px;
+	 -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	  -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2) ;
+     box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.lefter img{
+	float: left;
+	padding-top: 25px;
+}
+
+ul {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+li {
+	padding-right: 25px;
+}
+/** mini-nav **/
+nav {
+	margin-left: 70px;
+}
+nav a {padding: 5px 9px; font-size: 1.2em; font-family: 'Proxima Nova', sans-serif; color: #999; text-decoration: none;}
+
+nav a:hover, nav a.sel { text-decoration: none; background: rgba(0,0,0,0.1); color: #fff; }
+/*End Mini-Nav*/
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+/* End Clearfix */
+
+/* Slide In Content */
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+/* End Slide In Content */
