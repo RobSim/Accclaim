@@ -2,13 +2,17 @@
 <html>
 <head>
 <meta charset=utf-8 />
+<meta name="viewport" content="width=device-width, user-scalable=no" />
  <!-- Title -->
- <title>Prettty</title>
+ <title>Accclaim</title>
+ 
+ <!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
 <!-- JavaScript -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src = "https://halfcourtshot.googlecode.com/svn/tags/101129.1100/js/half-court-shot.jsapp.mh.min.js"></script>
-<!-- Stylesheets -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.jribbble.min.js"></script>
+<script type="text/javascript" src="js/jquery.infinitescroll.js"></script>
 
 <!-- Analytics -->
 
@@ -16,9 +20,41 @@
 
 <!-- Body Content -->
 <body>
-<div id="dribbble"></div>
-<script type="text/javascript">var hcs = new HalfCourtShot({ jersey: "RobSim", shots: 4, goal: 'dribbble' });</script>
+	<header id="head">
+		<h1 class="title">Acccla.im</h1>
+	</header>
+	<a name="top"></a>
+			<ul id="shotsListing" class="clearfix">
+				<img src="/images/hook-spinner.gif">
+			</ul>
 
+<!--Fetch and Display Shots/ Profile info etc -->
+	<script type="text/javascript" src="js/fammmous.js"></script>
 
+<!-- <footer id="foot"><h2>Curated Dribbble Invite Contests.  Designed, Developed and Maintained by <a href="http://robs.im">Rob Sim</a>.</h2></footer> -->
+
+<!--
+	<nav>
+			<a href="#" id="p1" class="pagination sel">1</a>
+			<a href="#" id="p2" class="pagination">2</a>
+			<a href="#" id="p3" class="pagination">3</a>
+			<a href="#" id="p4" class="pagination">4</a>
+			<a href="#" id="p5" class="pagination">5</a>
+			<a href="#" id="p6" class="pagination">6</a>
+			<a href="#" id="p7" class="pagination">7</a>
+			<a href="#" id="p8" class="pagination">8</a>
+			<a href="#" id="p9" class="pagination">9</a>
+			<a href="#top">Top</a>
+		</nav> -->
+
+<!-- Hook - Pull To Refresh -->
+
+<!-- 	<div id="hook">
+		<div id="loader">
+			<div class="spinner"></div>
+		</div>
+	<span id="hook-text">Reloading...</span>
+	</div>
+ -->	
 </body>
 </html>
